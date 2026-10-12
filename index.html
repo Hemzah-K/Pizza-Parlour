@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f1e8">
+    <meta name="description" content="Echte New York-pizza, gebakken in Delft. Ontdek jouw nieuwe favoriet bij Skibidi Pizza.">
+    <title>Skibidi Pizza — goeie pizza, geen gedoe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip.content">Ga naar inhoud</a>
+    <div class="announcement"><span class="sparkle" aria-hidden="true">✳</span> <span data-i18n="announcement.first">DEMO-WEBSITE · GEEN ECHTE BESTELLINGEN</span> <span class="announcement-divider" aria-hidden="true">·</span> <span data-i18n="announcement.second">KAART EN PRIJZEN TER ILLUSTRATIE</span></div>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Skibidi Pizza home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 42 42"><path d="M7 8.5 35 8 21 36 7 8.5Z" fill="currentColor"/><path d="m11 12 19-.3-9.4 18.8L11 12Z" fill="#ffc94d"/><circle cx="17" cy="16" r="2.1" fill="#d93b2b"/><circle cx="24" cy="16.8" r="2.1" fill="#d93b2b"/><circle cx="21" cy="23" r="2.1" fill="#d93b2b"/></svg></span>
+        <span>skibidi<span class="brand-pizza">pizza</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Hoofdnavigatie" data-i18n-aria="nav.label">
+        <a href="#menu" data-i18n="nav.menu">De kaart</a>
+        <a href="#our-thing" data-i18n="nav.story">Ons verhaal</a>
+        <a class="nav-location" href="#location"><span aria-hidden="true">⌖</span> <span data-i18n="location.short">Delft, NL</span></a>
+      </nav>
+      <div class="header-actions">
+        <label class="select-label">
+          <span class="visually-hidden" data-i18n="settings.language">Taal</span>
+          <select class="preference-select language-select" data-language-select data-i18n-aria="settings.language" aria-label="Taal">
+            <option value="nl">NL</option><option value="en">EN</option>
+          </select>
+        </label>
+        <label class="select-label theme-select-label">
+          <span class="visually-hidden" data-i18n="settings.theme">Thema</span>
+          <select class="preference-select" data-theme-select data-i18n-aria="settings.theme" aria-label="Thema kiezen">
+            <option value="light" data-i18n-option="theme.light">☀️ Licht</option><option value="dark" data-i18n-option="theme.dark">🌙 Donker</option><option value="kawaii" data-i18n-option="theme.kawaii">🦄 Kawaii</option>
+          </select>
+        </label>
+        <button class="cart-trigger" type="button" data-open-cart aria-label="Open je tas, 0 items">
+          <span class="bag-icon" aria-hidden="true">▱</span><span class="cart-label" data-i18n="cart.button">Je tas</span><span class="cart-count" data-cart-count aria-live="polite">0</span>
+        </button>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> <span data-i18n="hero.eyebrow">IN DELFT GEBAKKEN. ELKE DAG.</span></p>
+          <h1 id="hero-title"><span data-i18n="hero.title.first">Goeie pizza.</span><br><span data-i18n="hero.title.second">Geen gedoe.</span></h1>
+          <p class="hero-intro" data-i18n="hero.intro">Grote New York-slices, eerlijke prijzen en zo’n korst waar je morgen nog aan denkt.</p>
+          <div class="hero-actions"><a class="button button-light" href="#menu"><span data-i18n="hero.cta">Scoor je slice</span> <span aria-hidden="true">↘</span></a><span class="hero-note"><span aria-hidden="true">✦</span> <span data-i18n="hero.delivery">Bestel-flow demo · geen echte bezorging</span></span></div>
+          <div class="hero-proof"><span class="proof-stars" aria-hidden="true">✦</span><span><strong data-i18n="hero.reviews.rating">Dit is een demo</strong> <span data-i18n="hero.reviews">om rustig te proberen</span></span></div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-sticker sticker-top">100%<br><strong data-i18n="hero.sticker">VERS</strong></div>
+          <img class="hero-pizza" src="assets/pizzas/classic.jpg" alt="" fetchpriority="high" decoding="async">
+          <div class="hero-sticker sticker-bottom"><span data-i18n="hero.sticker.small">lekker</span><strong data-i18n="hero.sticker.big">spul ↓</strong></div>
+          <div class="hero-orbit orbit-one" aria-hidden="true">✳</div><div class="hero-orbit orbit-two" aria-hidden="true">✦</div>
+        </div>
+        <div class="hero-bottomline"><span data-i18n="hero.promise.one">DEEG MET DE HAND GEREKT</span><span class="bottomline-dot">●</span><span data-i18n="hero.promise.two">SAUS VERS GEMAAKT</span><span class="bottomline-dot">●</span><span data-i18n="hero.promise.three">ALTIJD EEN BEETJE EXTRA KAAS</span></div>
+      </section>
+      <section class="menu-section section-wrap" id="menu" aria-labelledby="menu-title">
+        <div class="section-heading"><div><p class="eyebrow eyebrow-red" data-i18n="menu.eyebrow">HET LEKKERSTE DEEL</p><h2 id="menu-title"><span data-i18n="menu.title.first">Jouw nieuwe</span> <span data-i18n="menu.title.second">favoriet.</span></h2><p class="section-intro" data-i18n="menu.intro">Met langzaam gerezen deeg, goeie ingrediënten en geen saaie happen.</p></div><a class="text-link menu-anchor" href="#menu-grid"><span data-i18n="menu.link">Bekijk de hele kaart</span> <span aria-hidden="true">↓</span></a></div>
+        <div class="menu-toolbar"><div class="category-list" role="group" aria-label="Filter pizza's op categorie" data-i18n-aria="menu.filters" data-category-list></div><span class="menu-count" data-menu-count></span></div>
+        <div class="menu-grid" id="menu-grid" data-menu-grid></div>
+      </section>
+      <section class="manifesto" id="our-thing" aria-labelledby="manifesto-title">
+        <div class="manifesto-pattern" aria-hidden="true">✳ &nbsp; ✦ &nbsp; ✳ &nbsp; ✦ &nbsp; ✳ &nbsp; ✦ &nbsp; ✳</div>
+        <div class="manifesto-inner"><p class="eyebrow" data-i18n="story.eyebrow">EEN BEETJE EXTRA LIEFDE IN ELKE SLICE</p><h2 id="manifesto-title"><span data-i18n="story.title.first">Pizza nemen we</span><br><em data-i18n="story.title.second">lekker serieus.</em></h2><p data-i18n="story.copy">Behalve onszelf. Die houden we luchtig. Maar deeg? Tomaten? Kaas? Daar gaan we vol voor.</p><a href="#menu" class="button button-outline"><span data-i18n="story.cta">Proef het verschil</span> <span aria-hidden="true">↗</span></a></div>
+        <div class="manifesto-side" aria-hidden="true"><div class="side-stamp">GOEIE<br><span>SFEER</span><br>ALTIJD</div><span class="side-caption">MET LIEFDE<br>GESNEDEN<br>IN DELFT.</span></div>
+      </section>
+      <section class="promise-section section-wrap" id="location" aria-labelledby="promise-title">
+        <div class="promise-copy"><p class="eyebrow eyebrow-red" data-i18n="location.eyebrow">JOUW PIZZA-PEOPLE UIT DELFT</p><h2 id="promise-title"><span data-i18n="location.title.first">Van onze oven</span><br><span data-i18n="location.title.second">naar jouw bank.</span></h2><p data-i18n="location.copy">Kom gezellig langs of laat ons iets lekkers bezorgen. Je vindt ons aan de Brasserskade 1 in Delft.</p><a class="text-link" href="https://maps.google.com/?q=Brasserskade+1,+Delft,+Netherlands" target="_blank" rel="noreferrer"><span data-i18n="location.map">Plan je route</span> <span aria-hidden="true">↗</span></a>
+          <div class="founder-card"><p class="eyebrow eyebrow-red" data-i18n="founders.eyebrow">DE GEZICHTEN ACHTER DE PIZZA</p><h3 data-i18n="founders.title">De oprichters</h3><div class="founder-names"><span><strong>Hemzah Kariman</strong><small data-i18n="founders.role.founder">Oprichter</small></span><span><strong>Ibrahim “Ibby Ibo” Shah</strong><small data-i18n="founders.role.cofounder">Medeoprichter</small></span></div><div class="founder-contact"><span><strong data-i18n="contact.phone">Telefoon</strong><span data-i18n="contact.phone.soon">Binnenkort bekend</span></span><span><strong data-i18n="contact.email">E-mail</strong><span data-i18n="contact.email.soon">Binnenkort bekend</span></span></div></div>
+        </div>
+        <div class="hours-card"><span class="hours-icon" aria-hidden="true">✳</span><p class="eyebrow eyebrow-red" data-i18n="location.card.eyebrow">HIER VIND JE ONS</p><h3 class="location-card-title"><span data-i18n="location.card.title.first">Delft. Dichtbij.</span><br><span data-i18n="location.card.title.second">En goed belegd.</span></h3><a class="address-map" href="https://maps.google.com/?q=Brasserskade+1,+Delft,+Netherlands" target="_blank" rel="noreferrer"><span class="address-pin" aria-hidden="true">⌖</span><span><strong>Brasserskade 1</strong><span data-i18n="location.country">Delft, Nederland</span></span><span class="address-arrow" aria-hidden="true">↗</span></a><p class="opening-note" data-i18n="location.hours">Openingstijden delen we zodra de oven aanstaat.</p><span class="hours-address">BRASSERSKADE 1 · DELFT, NL</span></div>
+      </section>
+      <section class="closing-banner"><p data-i18n="closing.text">JIJ REGELT DE MENSEN. WIJ DE PIZZA.</p><a href="#menu"><span data-i18n="closing.cta">Bestel iets goeds</span> <span aria-hidden="true">↗</span></a></section>
+    </main>
+    <footer class="site-footer"><a class="brand footer-brand" href="#"><span class="brand-mark" aria-hidden="true">✳</span><span>skibidi<span class="brand-pizza">pizza</span></span></a><span data-i18n="footer.made">GEMAAKT MET GROTE-SLICE-ENERGIE IN DELFT</span><span>© <span data-year></span> SKIBIDI PIZZA. <span data-i18n="footer.legal">WEES LIEF. EET LEKKER.</span></span></footer>
+
+    <div class="overlay" data-cart-overlay hidden></div>
+    <aside class="cart-drawer" data-cart-drawer role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true" inert>
+      <div class="drawer-header"><div><p class="eyebrow eyebrow-red" data-i18n="cart.eyebrow">GOEDE SPULLEN</p><h2 id="cart-title"><span data-i18n="cart.title">Je tas</span> <span data-drawer-count>(0)</span></h2></div><button class="icon-button" type="button" data-close-cart data-i18n-aria="cart.close" aria-label="Sluit je tas">×</button></div>
+      <div class="order-type" role="group" aria-label="Kies hoe je je bestelling ontvangt" data-i18n-aria="cart.orderType"><button type="button" data-order-type="delivery" class="order-type-button is-selected" aria-pressed="true"><span aria-hidden="true">↗</span> <span data-i18n="cart.delivery">Bezorgen</span></button><button type="button" data-order-type="pickup" class="order-type-button" aria-pressed="false"><span aria-hidden="true">⌖</span> <span data-i18n="cart.pickup">Afhalen</span></button></div>
+      <div class="cart-items" data-cart-items></div>
+      <div class="cart-empty" data-cart-empty><span aria-hidden="true">🍕</span><h3 data-i18n="cart.empty.title">Je tas is nog een beetje sip.</h3><p data-i18n="cart.empty.copy">Gelukkig is pizza maar één klik weg.</p><button class="button button-dark" type="button" data-close-cart><span data-i18n="cart.empty.cta">Bekijk de kaart</span> <span aria-hidden="true">↗</span></button></div>
+      <div class="drawer-footer" data-cart-footer hidden><p class="delivery-note" data-delivery-note></p><div class="total-line"><span data-i18n="cart.subtotal">Subtotaal</span><strong data-subtotal>€ 0,00</strong></div><div class="total-line"><span data-i18n="cart.tax">Geschatte btw</span><span data-tax>€ 0,00</span></div><div class="total-line"><span data-fee-label>Bezorging</span><span data-fee>€ 0,00</span></div><div class="total-line total-grand"><span data-i18n="cart.total">Totaal</span><strong data-total>€ 0,00</strong></div><button class="button button-dark checkout-button" type="button" data-checkout><span data-i18n="cart.checkout">Verder naar afrekenen</span> <span aria-hidden="true">↗</span></button><p class="payment-note" data-i18n="checkout.disclaimer.short">Dit is een demo. Je betaalt hier niets.</p></div>
+    </aside>
+
+    <div class="modal-backdrop" data-customize-backdrop hidden></div>
+    <section class="customize-modal" data-customize-modal role="dialog" aria-modal="true" aria-labelledby="customize-title" aria-hidden="true" inert>
+      <button class="icon-button modal-close" type="button" data-close-customize data-i18n-aria="customize.close" aria-label="Sluit pizza-aanpassingen">×</button>
+      <div class="customize-art" data-customize-art aria-hidden="true"></div>
+      <div class="customize-content"><p class="eyebrow eyebrow-red" data-i18n="customize.eyebrow">MAAK 'M VAN JOU</p><h2 id="customize-title" data-i18n="customize.title">Stel je pizza samen</h2><p class="customize-description" data-customize-description></p>
+        <fieldset class="option-group"><legend data-i18n="customize.size">Kies je formaat</legend><div class="option-tiles" data-size-options></div></fieldset>
+        <fieldset class="option-group"><legend data-i18n="customize.crust">Kies je korst</legend><div class="select-wrap"><select data-crust-select aria-label="Kies je korst" data-i18n-aria="customize.crust"><option value="classic">Klassiek — goudbruin en lekker vouwbaar</option><option value="thin">Dun &amp; knapperig — extra crunch</option><option value="gluten-free">Glutenvrij — zelfde slice-energie (+€ 3,00)</option></select><span aria-hidden="true">⌄</span></div></fieldset>
+        <fieldset class="option-group"><legend><span data-i18n="customize.extras">Extra lekkers</span> <span data-i18n="customize.optional">(mag, hoeft niet)</span></legend><div class="extras-list" data-extras-list></div></fieldset>
+        <button class="button button-dark add-customized-button" type="button" data-add-customized><span data-i18n="customize.add">In je tas</span> <span data-customized-price>€ 0,00</span></button>
+      </div>
+    </section>
+
+    <div class="modal-backdrop" data-checkout-backdrop hidden></div>
+    <section class="checkout-modal" data-checkout-modal role="dialog" aria-modal="true" aria-labelledby="checkout-title" aria-hidden="true" inert>
+      <button class="icon-button modal-close" type="button" data-close-checkout data-i18n-aria="checkout.close" aria-label="Sluit afrekenen">×</button>
+      <div data-checkout-form-view><p class="eyebrow eyebrow-red" data-i18n="checkout.eyebrow">BIJNA PIZZATIJD</p><h2 id="checkout-title"><span data-i18n="checkout.title.first">Waar mogen we</span><br><span data-i18n="checkout.title.second">de pizza bezorgen?</span></h2><p class="checkout-summary" data-checkout-summary></p>
+        <form data-checkout-form>
+          <label class="field-label"><span data-i18n="checkout.name">Je naam</span><input name="name" autocomplete="name" required placeholder="Bijv. Alex Slice" data-i18n-placeholder="checkout.name.placeholder"></label>
+          <label class="field-label"><span data-i18n="checkout.email">E-mailadres</span><input name="email" type="email" autocomplete="email" required placeholder="jij@voorbeeld.nl" data-i18n-placeholder="checkout.email.placeholder"></label>
+          <label class="field-label"><span data-i18n="checkout.phone">Telefoonnummer</span><input name="phone" type="tel" autocomplete="tel" required placeholder="+31 6 1234 5678" data-i18n-placeholder="checkout.phone.placeholder"></label>
+          <label class="field-label" data-address-field><span data-i18n="checkout.address">Bezorgadres</span><input name="address" autocomplete="street-address" placeholder="Brasserskade 1, Delft" data-i18n-placeholder="checkout.address.placeholder"></label>
+          <label class="field-label" data-notes-field><span><span data-i18n="checkout.notes">Nog iets dat we moeten weten?</span> <span data-i18n="checkout.optional">(optioneel)</span></span><textarea name="notes" rows="2" placeholder="Deurcode, extra servetjes, goeie grappen..." data-i18n-placeholder="checkout.notes.placeholder"></textarea></label>
+          <div class="checkout-total"><span data-i18n="checkout.estimated">Geschat totaal</span><strong data-checkout-total>€ 0,00</strong></div>
+          <button class="button button-dark checkout-submit" type="submit"><span data-i18n="checkout.place">Demo-bestelling plaatsen</span> <span aria-hidden="true">↗</span></button>
+          <p class="payment-note" data-i18n="checkout.disclaimer">Deze demo bevestigt alleen je bestelling. Er wordt geen betaling verwerkt.</p>
+        </form>
+      </div>
+      <div class="confirmation-view" data-confirmation-view hidden aria-live="polite"></div>
+    </section>
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+  </body>
+</html>
